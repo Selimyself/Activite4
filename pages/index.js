@@ -9,7 +9,7 @@ const Home = ({ tasks }) => {
         {tasks.map(task => (
           <li key={task.id}>
             <Link href={`/task/${task.id}`}>
-              <a>{task.title}</a>
+              {task.title}
             </Link>
           </li>
         ))}
